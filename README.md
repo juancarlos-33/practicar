@@ -79,7 +79,16 @@ Modifica el archivo `appsettings.json` en la raíz del proyecto para adaptar las
 }
 ```
 
-### Paso 3: Restaurar y Ejecutar
+### Paso 3: Instalar Northwind
+
+En la carpeta `database` se incluyen los scripts necesarios para crear la base de datos local:
+
+* `install-northwind.sql`: crea la base `Northwind` y ejecuta el script principal.
+* `instnwnd.sql`: script oficial con tablas, vistas y datos de ejemplo.
+
+Si usas SQL Server Management Studio, abre `install-northwind.sql`, activa `Query > SQLCMD Mode` y ejecuta el script.
+
+### Paso 4: Restaurar y Ejecutar
 
 Abre una terminal en el directorio del proyecto y ejecuta la CLI de .NET:
 
