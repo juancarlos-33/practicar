@@ -37,21 +37,21 @@ namespace ADSI2026.Controllers
         }
 
         [HttpDelete("DeleteProduct")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        public async Task<IActionResult> DeleteProduct([FromQuery] int id)
         {
             bool success = await _productServices.DeleteProductAsync(id);
             return Ok(success);
         }
 
         [HttpPost("AddProduct")]
-        public async Task<IActionResult> AddProduct(AddProductDto add)
+        public async Task<IActionResult> AddProduct([FromForm] AddProductDto add)
         {
             bool success = await _productServices.AddProductAsync(add);
             return Ok(success);
         }
 
         [HttpPut("UpdateProduct")]
-        public async Task<IActionResult> UpdateProduct(UpdateProductDto update)
+        public async Task<IActionResult> UpdateProduct([FromForm] UpdateProductDto update)
         {
             bool success = await _productServices.UpdateProductAsync(update);
             return Ok(success);
