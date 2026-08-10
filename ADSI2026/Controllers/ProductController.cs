@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC.Data.DTO.Product;
-using MVC.Data.DTO.Supplier;
-using MVC.Domain.Services;
 using MVC.Domain.Services.Interfaces;
 
 namespace ADSI2026.Controllers

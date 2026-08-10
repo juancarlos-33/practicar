@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MVC.Data.Data;
 using MVC.Data.DTO.Product;
-using MVC.Data.DTO.Supplier;
 using MVC.Data.Models;
 using MVC.Domain.Services.Interfaces;
 
