@@ -274,9 +274,21 @@
                 return false;
             }
 
+            if (Number($('#txtPrice').val()) < 0) {
+                $('#txtPrice').focus();
+                toastMessage('warning', 'El precio no puede ser negativo.');
+                return false;
+            }
+
             if ($('#txtStock').val() == '') {
                 $('#txtStock').focus();
                 toastMessage('warning', 'La cantidad es obligatoria.');
+                return false;
+            }
+
+            if (Number($('#txtStock').val()) < 0) {
+                $('#txtStock').focus();
+                toastMessage('warning', 'La cantidad no puede ser negativa.');
                 return false;
             }
 
