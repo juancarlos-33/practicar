@@ -100,8 +100,3 @@ dotnet restore
 dotnet watch run
 ```
 
----
-
-## 📝 Licencia
-
-Este proyecto está distribuido bajo la licencia MIT. Es de uso libre con fines educativos o como plantilla base.
