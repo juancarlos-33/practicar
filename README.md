@@ -6,6 +6,12 @@ El objetivo principal de esta solución es servir como guía práctica para ente
 
 ---
 
+## Entrega del Proyecto
+
+La solución incluye la aplicación MVC, las capas de dominio, datos y utilidades comunes, junto con scripts de apoyo para preparar Northwind cuando sea necesario.
+
+---
+
 ## 🚀 Stack Tecnológico
 
 * **Framework Principal:** .NET 8 (ASP.NET Core MVC)
