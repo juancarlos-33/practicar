@@ -33,28 +33,28 @@ namespace ADSI2026.Controllers
 
 
         [HttpGet("GetCustomer")]
-        public async Task<IActionResult> GetCustomerAsync(string customerId)
+        public async Task<IActionResult> GetCustomerAsync([FromQuery] string customerId)
         {
             Customer entity = await _customerServices.GetCustomerAsync(customerId);
             return Ok(entity);
         }
 
         [HttpDelete("DeleteCustomer")]
-        public async Task<IActionResult> DeleteCustomer(string customerId)
+        public async Task<IActionResult> DeleteCustomer([FromQuery] string customerId)
         {
             bool success = await _customerServices.DeleteCustomersAsync(customerId);
             return Ok(success);
         }
 
         [HttpPost("AddCustomers")]
-        public async Task<IActionResult> AddCustomers(AddCustomerDto customer)
+        public async Task<IActionResult> AddCustomers([FromForm] AddCustomerDto customer)
         {
             bool success = await _customerServices.AddCustomersAsync(customer);
             return Ok(success);
         }
 
         [HttpPut("UpdateCustomers")]
-        public async Task<IActionResult> UpdateCustomersAsync(UpdateCustomerDto update)
+        public async Task<IActionResult> UpdateCustomersAsync([FromForm] UpdateCustomerDto update)
         {
             bool success = await _customerServices.UpdateCustomersAsync(update);
             return Ok(success);

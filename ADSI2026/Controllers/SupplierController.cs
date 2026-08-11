@@ -26,21 +26,21 @@ namespace ADSI2026.Controllers
         }
 
         [HttpDelete("DeleteSupplier")]
-        public async Task<IActionResult> DeleteSupplier(int id)
+        public async Task<IActionResult> DeleteSupplier([FromQuery] int id)
         {
             bool success = await _supplierServices.DeleteSupplierAsync(id);
             return Ok(success);
         }
 
         [HttpPost("AddSupplier")]
-        public async Task<IActionResult> AddSupplier(AddSupplierDto add)
+        public async Task<IActionResult> AddSupplier([FromForm] AddSupplierDto add)
         {
             bool success = await _supplierServices.AddSupplierAsync(add);
             return Ok(success);
         }
 
         [HttpPut("UpdateSupplier")]
-        public async Task<IActionResult> UpdateSupplier(UpdateSupplierDto update)
+        public async Task<IActionResult> UpdateSupplier([FromForm] UpdateSupplierDto update)
         {
             bool success = await _supplierServices.UpdateSupplierAsync(update);
             return Ok(success);
