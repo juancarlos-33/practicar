@@ -74,7 +74,7 @@ public partial class NorthwindContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=Northwind;User ID=sa;Password=TU_PASSWORD;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=Northwind;User ID=sa;Password=12345678;TrustServerCertificate=True;");
         }
     }
 
